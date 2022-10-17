@@ -135,7 +135,7 @@
 .reply input {
     padding: 10px;
     width: 100%;
-    
+    box-sizing: border-box;  
     border: var(--main-border);
     border-radius: 20px;
     transition: all .3s ease-in-out;
@@ -144,7 +144,7 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
     position: absolute;
-    right: 0;
+    right: 1mm;
     top:3px;
 }
 
@@ -182,7 +182,7 @@
 }
 
 .reply input:focus {
-    width: 90vw;
+    width: 95vw;
     transform: translateX(-13%) translateY(-80px)
 }
 
