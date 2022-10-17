@@ -29,3 +29,37 @@ padding-top:15px;
    color: rgba(0, 0, 0, 0.5);
 
 }
+
+@keyframes hidesplashscreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#splash-screen {
+    background-color: var(--green);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    animation: hidesplashscreen 0.4s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+
+#splash-screen h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#splash-screen i {
+    font-size: 122px;
+}

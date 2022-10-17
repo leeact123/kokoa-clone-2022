@@ -32,7 +32,8 @@
 .open-post {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+   
 }
 
 .open-post__title {
@@ -71,7 +72,7 @@
 }
 
 .open-post__member-status {
-    color: #FFA9DD;
+    color: #2712e8;
 }
 
 .open-post__photo {
@@ -98,4 +99,25 @@
 }
 .open-post__heart-count span {
     margin-left: 3px;
+}
+
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
