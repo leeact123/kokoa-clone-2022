@@ -16,4 +16,25 @@
 .icon-row__icon span {
     margin-top: 18px;
 }
-  
+
+
+
+@keyframes findiconEffect {
+    form {
+        transform: none;
+    }
+    to {
+        transform: scale(1.5);
+        color:var(--green);
+        
+}
+}
+
+.icon-row__icon .fa-qrcode:hover,
+.icon-row__icon .fa-address-book:hover,
+.icon-row__icon .fa-fingerprint:hover,
+.icon-row__icon .fa-envelope:hover {
+    cursor: pointer;
+    will-change: transform;
+    animation: findiconEffect 1s linear infinite;
+}
