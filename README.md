@@ -1,3 +1,4 @@
-#kokoa Clone 2022 Update
+#kokoa Clone 2022
+---------------------
 
 HTML & CSS & JS
